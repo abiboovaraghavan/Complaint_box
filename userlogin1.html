@@ -1,0 +1,88 @@
+
+<html>
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap" rel="stylesheet">
+  <title>Welcome to complaint system</title>
+  		
+	<style>
+	input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.3); /* IE */
+  -moz-transform: scale(1.3); /* FF */
+  -webkit-transform: scale(1.3); /* Safari and Chrome */
+  -o-transform: scale(1.3); /* Opera */
+  transform: scale(1.3);
+  padding: 5px;
+}
+		#back{
+			margin:0px;
+			width:100%;
+			height:100%;
+			background-image:url("vel1.jpg");
+			position:absolute;
+			background-size:cover;
+			}
+			#container{
+				background-color: rgba(0, 0, 0, 0.5);
+				margin-left:15%;
+			}
+			h3{
+				color: white;
+			}
+			h2 {
+            font-family: 'Shantell Sans', cursive;
+			color: azure;
+            }
+
+	</style>
+	
+  </head>
+  <body>
+	<nav class="navbar-nav navbar-expand-sm bg-primary">
+		<a href="index.html" class="nav-brand" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+			<img src="logo.png" alt="Logo" style="height: 60px; margin-right: 10px;margin-left: 20px;">
+			<h2 onclick='window.open("index.html");' style="cursor:pointer">VEC LightGrip!</h2>
+		</a>
+		<div class="nav-item items">
+			<a class="nav-link" href="userlogin1.html">User Login</a>
+		</div>
+		<div class="nav-item items">
+			<a class="nav-link" href="userreg1.html">User Registration</a>
+		</div>
+		<div class="nav-item items">
+			<a class="nav-link" href="adminlogin1.html">ADMIN</a>
+		</div>
+	</nav>
+		<div id="back" style="margin:0px;"></div>
+			<div id="container" style="width:70%;marin-left:15%;position:relative;margin-top:20px;padding:10px;border-radius:10px;border:.5px solid #3B71CA;box-shadow:1px 2px 3px 0px;">
+				<div class="heading" style="border-bottom:2px solid #3B71CA; text-align:center;">
+					<h3>Log Into User</h3>
+				</div>
+				<div class="log" >
+					<form class="container" action="userlogin2.php" method="POST" ><br />
+			
+						<input type="text" class="form-control"  placeholder="Username" name="username" required><br />
+						<input type="password" class="form-control" placeholder="Password" name="pass" required><br />
+						<input type="checkbox" class="form-check-input" name="chk[]" style="margin-left:5px;"><p style="margin-left:25px;color: white;">Remember me.</p>
+						<input type="submit" class="form-control btn btn-danger" value="Login"><br />
+					     <br>
+						<a href="userreg1.html" class="form-control btn btn-light" style="width:auto">Sign up here</a>
+					    <br>
+						<br>
+						
+						<a href="index.html" class="form-control btn btn-light" style="width:auto"> Cancel</a>
+						<input type="submit" style="width:auto;" class="form-control btn btn-light" value="Forget Password"><br />
+					</form>
+				</div>
+				
+			</div>
+		
+		
+</body>
+</html>
